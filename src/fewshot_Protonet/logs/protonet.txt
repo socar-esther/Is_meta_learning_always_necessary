@@ -1,0 +1,13 @@
+Start Training Phase !! 
+###################
+epoch 1, train, loss=151656.8041 acc=0.4678
+epoch 1, val, loss=161255.3218 acc=0.3604
+###################
+
+###################
+epoch 2, train, loss=38408.7796 acc=0.3724
+epoch 2, val, loss=1747.4710 acc=0.3522
+###################
+
+###################
+epoch 3, train, loss=1032.7031 acc=0.3889
