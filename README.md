@@ -25,7 +25,7 @@ $ python eval_fewshot.py --batch_size 4 \
                          --model_nm multi \
                          --n_ways 3 \
                          --n_shots 5 \
-                         --data_root ../../datasets/sanitized_test2_v2/ 
+                         --data_root ../../datasets/sanitized_test2_v2/  
 ```
 - Run the Zero-shot Openset Retrieval (ours)
 ```shell
