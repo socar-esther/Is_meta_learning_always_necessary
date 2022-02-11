@@ -13,7 +13,6 @@ $ cd src/rethinking_supervised/
 $ python train_main.py --batch_size 4 \
                        --epochs 500 \
                        --learning_rate 1e-3 \
-                       --lr_decay_epochs 60,80,100,120 \
                        --model resnet50 \
                        --dataset SOFAR \
                        --n_test_runs 600 \
