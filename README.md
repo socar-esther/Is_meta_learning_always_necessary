@@ -6,7 +6,7 @@ Implementation of KDD 2022 "Is Meta-Learning Always Necessary?: A Practical ML F
 - Download this dataset in ./datasets directory
 
 ## How to run
-- Run the supervised learner (ours)
+- Run the supervised learner (**ours**)
 ```shell
 $ cd src/rethinking_supervised/
 
@@ -28,7 +28,7 @@ $ python eval_fewshot.py --batch_size 4 \
                          --n_shots 5 \
                          --data_root ../../datasets/sanitized_test2_v2/  
 ```
-- Run the Zero-shot Openset Retrieval (ours)
+- Run the Zero-shot Openset Retrieval (**ours**)
 ```shell
 $ cd src/rethinking_supervised/
 $ python retrieval_main.py  --support_set_dir ../../datasets/open_set_few_shot_retrieval_set/support_document \
