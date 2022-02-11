@@ -43,7 +43,7 @@ def fast_adapt(batch, learner, loss, adaptation_steps, shots, ways, device):
     return evaluation_error, evaluation_accuracy
 
 
-def fast_adapt_test(batch, learner, loss, adaptation_steps, shots, args.ways, device):
+def fast_adapt_test(batch, learner, loss, adaptation_steps, shots, ways, device):
     data, labels = batch
     data, labels = data.to(device), labels.to(device)
 
