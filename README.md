@@ -3,6 +3,7 @@ Implementation of KDD 2022 "Is Meta-Learning Always Necessary?: A Practical ML F
 
 ## Datasets
 - We open our domain benchmark set in https://socar-kp.github.io/sofar_image_dataset/
+- Download this dataset in ./datasets directory
 
 ## How to run
 - Run the supervised learner (ours)
