@@ -11,3 +11,8 @@ $ cd src/rethinking_supervised/
 $ python train_main.py # Training phase
 $ python eval_fewshot.py # Inference phase
 ```
+- Run the Zero-shot Openset Retrieval (ours)
+```shell
+$ cd src/rethinking_supervised/
+$ python retrieval_main.py 
+```
