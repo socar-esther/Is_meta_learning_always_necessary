@@ -1,4 +1,4 @@
-# Is meta_learning always necessary
+# Is meta-learning always necessary
 Implementation of KDD 2022 "Is Meta-Learning Always Necessary?: A Practical ML Framework Solving Novel Tasks at Large-scale Car Sharing Platform"
 
 ## Datasets
