@@ -12,7 +12,7 @@ $ cd src/rethinking_supervised/
 
 # Training phase
 $ python train_main.py --batch_size 4 \
-                       --learning_rate 1e-3 \
+                       --learning_rate 1e-5 \
                        --lr_decay_epochs 60,80 \
                        --model resnet50 \
                        --dataset SOFAR 
