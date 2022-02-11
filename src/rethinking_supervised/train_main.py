@@ -51,7 +51,7 @@ def parse_option() :
     # dataset
     parser.add_argument('--model', type=str, default='resnet50', choices=model_pool)
     parser.add_argument('--dataset', type=str, default='SOFAR', choices=['miniImageNet', 'tieredImageNet',
-                                                                                    'CIFAR-FS', 'FC100'])
+                                                                                    'CIFAR-FS', 'FC100', 'SOFAR' ])
     parser.add_argument('--transform', type=str, default='A', choices=transforms_list)
     parser.add_argument('--use_trainval', action='store_true', help='use trainval set')
 
