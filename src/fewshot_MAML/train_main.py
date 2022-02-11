@@ -46,9 +46,9 @@ def main():
 
     # Create Tasksets using the benchmark interface
     tasksets = l2l.vision.benchmarks.get_tasksets('cifarfs',
-                                                  train_samples=2*shots,
+                                                  train_samples=2*args.shots,
                                                   train_ways=args.ways,
-                                                  test_samples=2*shots,
+                                                  test_samples=2*args.shots,
                                                   test_ways=args.ways,
                                                   num_tasks=100000,
                                                   root='../../datasets',
