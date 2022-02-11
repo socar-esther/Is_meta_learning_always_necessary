@@ -40,3 +40,4 @@ $ python retrieval_main.py  --support_set_dir ../../datasets/open_set_few_shot_r
                             --data_nm SOFAR \
                             --distance_opt euclidean
 ```
+- If you want to check the domain shift code, refer bottom of the code of `src/rethinking_supervised/scratch_notebook/supervised_script.ipynb`
