@@ -11,14 +11,11 @@ $ cd src/rethinking_supervised/
 
 # Training phase
 $ python train_main.py --batch_size 4 \
-                       --epochs 500 \
                        --learning_rate 1e-3 \
+                       --lr_decay_epochs 60,80 \
                        --model resnet50 \
-                       --dataset SOFAR \
-                       --n_test_runs 600 \
-                       --n_ways 3 \ 
-                       --n_shots 5 \
-                       --data_root ../../datasets/sofar_v3/ 
+                       --dataset SOFAR 
+
 # Inference phase          
 $ python eval_fewshot.py --batch_size 4 \
                          --epochs 200 \
@@ -28,7 +25,7 @@ $ python eval_fewshot.py --batch_size 4 \
                          --model_nm multi \
                          --n_ways 3 \
                          --n_shots 5 \
-                         --data_root ../../datasets/sanitized_test2_v2/
+                         --data_root ../../datasets/sanitized_test2_v2/ 
 ```
 - Run the Zero-shot Openset Retrieval (ours)
 ```shell
