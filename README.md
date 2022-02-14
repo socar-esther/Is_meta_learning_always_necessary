@@ -144,4 +144,4 @@ $ python retrieval_main.py  --support_set_dir ../../datasets/open_set_few_shot_r
 
 
 ## Acknowlegements
-- Part of the code is from [github](https://github.com/WangYueFt/rfs), the motivation of our paper
+- Part of the code is from [Rethinking Few-shot Classification: A Good Embedding Is All You Need(ICLR'22)](https://arxiv.org/abs/2003.11539), the motivation of our paper
