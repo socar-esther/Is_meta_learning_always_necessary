@@ -36,8 +36,9 @@ $ python eval_fewshot.py --batch_size 4 \
 </div>
 </details>
 
-
-- Run the self-supervised learner
+<details>
+<summary>Run the self-supervised learner</summary>
+<div markdown="1">       
 ```shell
 $ cd src/rethinking_selfsupervised/
 
@@ -64,7 +65,14 @@ $ python eval_fewshot.py --batch_size 4 \
                          --n_shots 5 \
                          --data_root ../../datasets/sanitized_test2_v2/  
 ```
-- Run the metric based meta-learning algorithm, ProtoNet
+
+</div>
+</details>
+
+<details>
+<summary>Run the metric based meta-learning algorithm, ProtoNet</summary>
+<div markdown="1">       
+
 ```shell
 $ cd src/fewshot_Protonet/
 
@@ -88,7 +96,13 @@ $ python eval_fewshot.py --test_shot 5 \
                          --n_gpu 2 
 
 ```
-- Run the optimization based meta-learning algorithm, MAML
+
+</div>
+</details>
+
+<details>
+<summary>Run the optimization based meta-learning algorithm, MAML</summary>
+<div markdown="1">       
 ```shell
 $ cd src/fewshot_MAML/
 
@@ -110,6 +124,11 @@ $ python eval_fewshot.py --ways 3 \
                          --meta_batch_size 32 \
                          --num_iterations 50000 
 ```
+
+</div>
+</details>
+
+
 
 ### Zero-shot Openset Retrieval
 - Run the Zero-shot Openset Retrieval (**ours**)
