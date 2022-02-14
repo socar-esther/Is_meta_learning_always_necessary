@@ -8,6 +8,7 @@ Implementation of KDD 2022 "Is Meta-Learning Always Necessary?: A Practical ML F
 ## How to run
 ### (1) Few-shot learning with representation learning
 - Here is the sample commands for running the supervised learner (**ours**)  
+- If you want to see the scratch notebook code, refer this : [URL](https://github.com/socar-esther/Is_meta_learning_always_necessary/blob/master/src/rethinking_supervised/supervised_script.ipynb)
 ```shell
 $ cd src/rethinking_supervised/
 
@@ -140,7 +141,7 @@ $ python retrieval_main.py  --support_set_dir ../../datasets/open_set_few_shot_r
                             --data_nm SOFAR \
                             --distance_opt euclidean
 ```
-- If you want to check the domain shift code, refer bottom of the code of [notebook](https://github.com/socar-esther/Is_meta_learning_always_necessary/blob/master/src/rethinking_supervised/scratch_notebook/supervised_script.ipynb)
+- If you want to check the domain shift code, refer bottom of the code of [notebook](https://github.com/socar-esther/Is_meta_learning_always_necessary/blob/master/src/rethinking_supervised/supervised_script.ipynb)
 
 
 ## Acknowlegements
