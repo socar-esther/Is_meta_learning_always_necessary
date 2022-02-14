@@ -7,14 +7,10 @@ Implementation of KDD 2022 "Is Meta-Learning Always Necessary?: A Practical ML F
 
 ## How to run
 ### Few-shot learning
--<details>
-<summary>Run the supervised learner (**ours**)</summary>
+<details>
+<summary>Run the supervised learner (ours)</summary>
 <div markdown="1">       
 
-😎숨겨진 내용😎
-
-</div>
-</details>
 ```shell
 $ cd src/rethinking_supervised/
 
@@ -36,6 +32,11 @@ $ python eval_fewshot.py --batch_size 4 \
                          --n_shots 5 \
                          --data_root ../../datasets/sanitized_test2_v2/  
 ```
+
+</div>
+</details>
+
+
 - Run the self-supervised learner
 ```shell
 $ cd src/rethinking_selfsupervised/
