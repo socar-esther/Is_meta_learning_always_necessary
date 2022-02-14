@@ -7,7 +7,14 @@ Implementation of KDD 2022 "Is Meta-Learning Always Necessary?: A Practical ML F
 
 ## How to run
 ### Few-shot learning
-- Run the supervised learner (**ours**)
+-<details>
+<summary>Run the supervised learner (**ours**)</summary>
+<div markdown="1">       
+
+😎숨겨진 내용😎
+
+</div>
+</details>
 ```shell
 $ cd src/rethinking_supervised/
 
