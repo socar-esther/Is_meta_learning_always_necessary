@@ -144,5 +144,5 @@ $ python retrieval_main.py  --support_set_dir ../../datasets/open_set_few_shot_r
 - If you want to check the domain shift code, refer bottom of the code of [notebook](https://github.com/socar-esther/Is_meta_learning_always_necessary/blob/master/src/rethinking_supervised/supervised_script.ipynb)
 
 
-## Acknowlegements
+## Reference
 - Part of the code is from [Rethinking Few-shot Classification: A Good Embedding Is All You Need(ICLR'22)](https://arxiv.org/abs/2003.11539), the motivation of our paper
