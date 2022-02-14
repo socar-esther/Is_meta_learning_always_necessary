@@ -3,7 +3,7 @@ Implementation of KDD 2022 "Is Meta-Learning Always Necessary?: A Practical ML F
 
 ## Datasets
 - We open our domain benchmark set in https://socar-kp.github.io/sofar_image_dataset/
-- Download this dataset in ./datasets directory, named 'sofar_v3'
+- Download this dataset in ./datasets directory, and named this directory 'sofar_v3'
 
 ## How to run
 - Run the supervised learner (**ours**)
@@ -41,4 +41,8 @@ $ python retrieval_main.py  --support_set_dir ../../datasets/open_set_few_shot_r
                             --data_nm SOFAR \
                             --distance_opt euclidean
 ```
-- If you want to check the domain shift code, refer bottom of the code of `src/rethinking_supervised/scratch_notebook/supervised_script.ipynb`
+- If you want to check the domain shift code, refer bottom of the code of [notebook](https://github.com/socar-esther/Is_meta_learning_always_necessary/blob/master/src/rethinking_supervised/scratch_notebook/supervised_script.ipynb)
+
+
+## Acknowlegements
+- Part of the code is from [github](https://github.com/WangYueFt/rfs), the motivation of our paper
