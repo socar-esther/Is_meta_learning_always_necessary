@@ -85,12 +85,22 @@ $ python eval_fewshot.py --test_shot 5 \
 $ cd src/fewshot_MAML/
 
 # Training phase
-$
+$ python train_main.py --ways 3 \
+                       --shots 5 \
+                       --meta_lr 0.003 \
+                       --fast_lr 0.5 \
+                       --meta_batch_size 32 \
+                       --num_iterations 50000 
+                       
 
 
 # Inference phase
-
-$
+$ python eval_fewshot.py --ways 3 \
+                         --shots 5 \
+                         --meta_lr 0.003 \
+                         --fast_lr 0.5 \
+                         --meta_batch_size 32 \
+                         --num_iterations 50000 
 ```
 
 ### Zero-shot Openset Retrieval
