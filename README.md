@@ -32,7 +32,7 @@ $ python eval_fewshot.py --batch_size 4 \
 
 - other few-shot options
   <details>
-  <summary>Run the self-supervised learner</summary>
+  <summary>Run the self-supervised learner, BYOL with few-shot eval</summary>
   <div markdown="1">    
 
   ```shell
