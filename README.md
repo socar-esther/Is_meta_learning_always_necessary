@@ -38,7 +38,8 @@ $ python eval_fewshot.py --batch_size 4 \
 
 <details>
 <summary>Run the self-supervised learner</summary>
-<div markdown="1">       
+<div markdown="1">    
+  
 ```shell
 $ cd src/rethinking_selfsupervised/
 
@@ -65,10 +66,9 @@ $ python eval_fewshot.py --batch_size 4 \
                          --n_shots 5 \
                          --data_root ../../datasets/sanitized_test2_v2/  
 ```
-
+  
 </div>
 </details>
-
 <details>
 <summary>Run the metric based meta-learning algorithm, ProtoNet</summary>
 <div markdown="1">       
@@ -96,13 +96,14 @@ $ python eval_fewshot.py --test_shot 5 \
                          --n_gpu 2 
 
 ```
-
+  
 </div>
 </details>
 
 <details>
 <summary>Run the optimization based meta-learning algorithm, MAML</summary>
 <div markdown="1">       
+  
 ```shell
 $ cd src/fewshot_MAML/
 
