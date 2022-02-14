@@ -6,7 +6,7 @@ Implementation of KDD 2022 "Is Meta-Learning Always Necessary?: A Practical ML F
 - Download this dataset in ./datasets directory, and named this directory 'sofar_v3'
 
 ## How to run
-### Few-shot learning
+### (1) Few-shot learning with representation learning
 - Run the supervised learner (**ours**)  
 ```shell
 $ cd src/rethinking_supervised/
@@ -126,7 +126,7 @@ $ python eval_fewshot.py --batch_size 4 \
 
 
 
-### Zero-shot Openset Retrieval
+### (2) Zero-shot Openset Retrieval
 - Run the Zero-shot Openset Retrieval (**ours**)
 ```shell
 $ cd src/rethinking_supervised/
