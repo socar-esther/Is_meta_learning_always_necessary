@@ -7,10 +7,7 @@ Implementation of KDD 2022 "Is Meta-Learning Always Necessary?: A Practical ML F
 
 ## How to run
 ### Few-shot learning
-<details>
-<summary>Run the supervised learner (ours)</summary>
-<div markdown="1">       
-
+- Run the supervised learner (**ours**)  
 ```shell
 $ cd src/rethinking_supervised/
 
@@ -33,101 +30,99 @@ $ python eval_fewshot.py --batch_size 4 \
                          --data_root ../../datasets/sanitized_test2_v2/  
 ```
 
-</div>
-</details>
+- other few-shot options
+  <details>
+  <summary>Run the self-supervised learner</summary>
+  <div markdown="1">    
 
-<details>
-<summary>Run the self-supervised learner</summary>
-<div markdown="1">    
-  
-```shell
-$ cd src/rethinking_selfsupervised/
+  ```shell
+  $ cd src/rethinking_selfsupervised/
 
-# Training phase
-$ python train_main.py \
-    --gpus 4 \
-    --distributed_backend ddp \
-    --sync_batchnorm \
-    --dataset SOFAR \
-    --batch_size 128 \
-    --max_epochs 1000 \
-    --arch resnet50 \
-    --precision 16 \
-    --comment wandb-comment
+  # Training phase
+  $ python train_main.py \
+      --gpus 4 \
+      --distributed_backend ddp \
+      --sync_batchnorm \
+      --dataset SOFAR \
+      --batch_size 128 \
+      --max_epochs 1000 \
+      --arch resnet50 \
+      --precision 16 \
+      --comment wandb-comment
 
-# Inference phase
-$ python eval_fewshot.py --batch_size 4 \
-                         --epochs 200 \
-                         --learning_rate 1e-3 \
-                         --model resnet50 \
-                         --dataset SOFAR \
-                         --model_nm multi \
-                         --n_ways 3 \
-                         --n_shots 5 \
-                         --data_root ../../datasets/sanitized_test2_v2/  
-```
-  
-</div>
-</details>
-<details>
-<summary>Run the metric based meta-learning algorithm, ProtoNet</summary>
-<div markdown="1">       
+  # Inference phase
+  $ python eval_fewshot.py --batch_size 4 \
+                           --epochs 200 \
+                           --learning_rate 1e-3 \
+                           --model resnet50 \
+                           --dataset SOFAR \
+                           --model_nm multi \
+                           --n_ways 3 \
+                           --n_shots 5 \
+                           --data_root ../../datasets/sanitized_test2_v2/  
+  ```
 
-```shell
-$ cd src/fewshot_Protonet/
+  </div>
+  </details>
+  <details>
+  <summary>Run the metric based meta-learning algorithm, ProtoNet</summary>
+  <div markdown="1">       
 
-# Training phase
-$ python train_main.py --max_epoch 200 \
-                       --train_shot 10 \
-                       --train_way 3 \
-                       --train_query 15 \
-                       --test_shot 5 \
-                       --test_way 3 \
-                       --test_query 15 \
-                       --n_gpu 4 
-                       
+  ```shell
+  $ cd src/fewshot_Protonet/
 
-# Inference phase
-$ python eval_fewshot.py --test_shot 5 \
+  # Training phase
+  $ python train_main.py --max_epoch 200 \
+                         --train_shot 10 \
+                         --train_way 3 \
+                         --train_query 15 \
+                         --test_shot 5 \
                          --test_way 3 \
                          --test_query 15 \
-                         --dataset_nm cifarfs \
-                         --model_path ./checkpoint/epoch50_loss1.414059302210808.pth \
-                         --n_gpu 2 
-
-```
-  
-</div>
-</details>
-
-<details>
-<summary>Run the optimization based meta-learning algorithm, MAML</summary>
-<div markdown="1">       
-  
-```shell
-$ cd src/fewshot_MAML/
-
-# Training phase
-$ python train_main.py --ways 3 \
-                       --shots 5 \
-                       --meta_lr 0.003 \
-                       --fast_lr 0.5 \
-                       --meta_batch_size 32 \
-                       --num_iterations 50000 
-                       
+                         --n_gpu 4 
 
 
-# Inference phase
-$ python eval_fewshot.py --ways 3 \
+  # Inference phase
+  $ python eval_fewshot.py --test_shot 5 \
+                           --test_way 3 \
+                           --test_query 15 \
+                           --dataset_nm cifarfs \
+                           --model_path ./checkpoint/epoch50_loss1.414059302210808.pth \
+                           --n_gpu 2 
+
+  ```
+
+  </div>
+  </details>
+
+  <details>
+  <summary>Run the optimization based meta-learning algorithm, MAML</summary>
+  <div markdown="1">       
+
+  ```shell
+  $ cd src/fewshot_MAML/
+
+  # Training phase
+  $ python train_main.py --ways 3 \
                          --shots 5 \
                          --meta_lr 0.003 \
                          --fast_lr 0.5 \
                          --meta_batch_size 32 \
                          --num_iterations 50000 
-```
 
-</div>
-</details>
+
+
+  # Inference phase
+  $ python eval_fewshot.py --ways 3 \
+                           --shots 5 \
+                           --meta_lr 0.003 \
+                           --fast_lr 0.5 \
+                           --meta_batch_size 32 \
+                           --num_iterations 50000 
+  ```
+
+  </div>
+  </details>
 
 
 
