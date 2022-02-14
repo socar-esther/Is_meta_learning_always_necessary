@@ -30,7 +30,7 @@ $ python eval_fewshot.py --batch_size 4 \
                          --data_root ../../datasets/sanitized_test2_v2/  
 ```
 
-- other few-shot options
+- other few-shot option's sample commands
   <details>
   <summary>Run the self-supervised learner, BYOL with few-shot eval</summary>
   <div markdown="1">    
